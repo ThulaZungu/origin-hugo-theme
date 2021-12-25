@@ -4,10 +4,35 @@
   padding: 2%; 
   max-width: $screen-max; 
   margin: 0 auto;
-  background: var(--color-bg);
+  // background: var(--color-bg);
   display: flex;
   flex-flow: column nowrap;
   @media (min-width: $screen-lg) {
     padding: 4%;
   }
+}
+
+html {
+  background: linear-gradient(271deg, #0700b8, #00ff88);
+  background-size: 400% 400%;
+
+  -webkit-animation: Breath 60s ease infinite;
+  -moz-animation: Breath 60s ease infinite;
+  animation: Breath 60s ease infinite;
+}
+
+@-webkit-keyframes Breath {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@-moz-keyframes Breath {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@keyframes Breath { 
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
 }
